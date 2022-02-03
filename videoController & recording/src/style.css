@@ -1,0 +1,57 @@
+.videoController {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 12px 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#videoContainer video {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.videoController__play {
+  display: flex;
+  align-items: center;
+  width: 21%;
+  justify-content: space-between;
+}
+
+#timeline {
+  width: 40%;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 21%;
+}
+#volumeRange {
+  width: 75%;
+}
+
+#recordingStyle {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#recordingStyle button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+}
+
+#recordingStyle button:hover {
+  cursor: pointer;
+}
+
+#recordingStyle button:focus {
+  transform: scale(0.96);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6ade36b36a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div id="videoContainer">
+      <video
+        src="https://serranoarevalo.github.io/notflix/9bfd1023900e31286103369c803c7ee9.ogv"
+      ></video>
+      <div id="videoController" class="videoController">
+        <div class="videoController__play">
+          <i id="playPauseBtn" class="fas fa-play"></i>
+          <div class="time">
+            <span id="currentTime">00:00</span>
+            <span> / </span>
+            <span id="totalTime">00:00</span>
+          </div>
+        </div>
+        <input type="range" step="1" value="0" min="0" id="timeline" />
+        <div class="volume">
+          <i id="volume" class="fas fa-volume-up"></i>
+          <input
+            type="range"
+            step="0.1"
+            value="0.5"
+            min="0"
+            max="1"
+            id="volumeRange"
+          />
+        </div>
+        <div class="fullScreen">
+          <i id="fullScreenBtn" class="fas fa-expand"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="recordingStyle">
+      <audio src="" id="preview"></audio>
+      <button id="recordingBtn">Start Recording</button>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
